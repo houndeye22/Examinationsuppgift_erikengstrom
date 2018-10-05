@@ -47,7 +47,7 @@ public class ShipScript : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0f, 0f, -shipRotateSpeed * Time.deltaTime);
+            transform.Rotate(0f, 0f, shipRotateSpeed * Time.deltaTime);
         }
     }
 }
