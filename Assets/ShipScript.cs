@@ -29,10 +29,8 @@ public class ShipScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.Translate(shipSpeed * Time.deltaTime, 0, 0, Space.Self);
-        }
+        transform.Translate(shipSpeed * Time.deltaTime, 0, 0, Space.Self);
+
         if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(0f, 0f, shipRotateSpeed * Time.deltaTime);
@@ -41,13 +39,14 @@ public class ShipScript : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(-shipSpeed /2 * Time.deltaTime, 0, 0, Space.Self);
-            rend.color = shipColor;
-            rend.color = new Color(1f, 0f, 0f);
+            transform.Translate(-shipSpeed / 2 * Time.deltaTime, 0, 0, Space.Self);
+
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0f, 0f, shipRotateSpeed * Time.deltaTime);
+            transform.Rotate(0f, 0f, -shipRotateSpeed * Time.deltaTime);
+            rend.color = shipColor;
+            rend.color = new Color(0f, 1f, 0f);
         }
     }
 }
