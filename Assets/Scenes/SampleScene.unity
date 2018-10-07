@@ -295,7 +295,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 0.5507298, g: 0.950743, b: 0.9811321, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -357,12 +357,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23bdd006b579cb7499ef50642fb13392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rend: {fileID: 1612011462}
-  shipColor: {r: 0, g: 0, b: 0, a: 0}
+  rend1: {fileID: 1612011462}
+  rend2: {fileID: 1346161434}
+  shipColorFront: {r: 0, g: 0, b: 0, a: 0}
+  shipColorBase: {r: 0, g: 0, b: 0, a: 0}
   shipLocation: {fileID: 0}
   shipSpeed: 5
   shipRotateSpeed: 300
   timer: 0
+  shipColorRandom1: 0
+  shipColorRandom2: 0
+  shipColorRandom3: 0
+  shipColorFinal: 0
 --- !u!212 &1346161434
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -397,7 +403,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2b90b940b7862bc45813c171b91d1191, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -487,7 +493,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2b90b940b7862bc45813c171b91d1191, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
