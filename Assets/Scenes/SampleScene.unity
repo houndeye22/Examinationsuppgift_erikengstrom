@@ -360,8 +360,9 @@ MonoBehaviour:
   rend: {fileID: 1612011462}
   shipColor: {r: 0, g: 0, b: 0, a: 0}
   shipLocation: {fileID: 0}
-  shipSpeed: 10
+  shipSpeed: 5
   shipRotateSpeed: 300
+  timer: 0
 --- !u!212 &1346161434
 SpriteRenderer:
   m_ObjectHideFlags: 0

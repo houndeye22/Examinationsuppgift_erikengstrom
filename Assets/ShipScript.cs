@@ -18,6 +18,8 @@ public class ShipScript : MonoBehaviour
     [Range(-720, 720)]
     public float shipRotateSpeed;
 
+    public float timer;
+
 
     void Start()
     {
@@ -48,5 +50,8 @@ public class ShipScript : MonoBehaviour
             rend.color = shipColor;
             rend.color = new Color(0f, 1f, 0f);
         }
+
+        timer += 1 * Time.deltaTime;
+        print(string.Format("Timer: {0}", timer));
     }
 }
