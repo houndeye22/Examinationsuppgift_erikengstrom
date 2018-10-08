@@ -183,7 +183,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -255,7 +255,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 5
+  m_Time: 2.5
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 1
@@ -363,12 +363,22 @@ MonoBehaviour:
   shipColorBase: {r: 0, g: 0, b: 0, a: 0}
   shipLocation: {fileID: 0}
   shipSpeed: 5
-  shipRotateSpeed: 300
+  shipSpeedMin: 3
+  shipSpeedMax: 7
+  shipRotateSpeedLeft: 250
+  shipRotateSpeedRight: 300
   timer: 0
+  timerCount: 0
   shipColorRandom1: 0
   shipColorRandom2: 0
   shipColorRandom3: 0
-  shipColorFinal: 0
+  negativeSpawnX: -8
+  negativeSpawnY: -4
+  positiveSpawnX: 8
+  positiveSpawnY: 4
+  finalSpawnX: 0
+  finalSpawnY: 0
+  shipSpawnPos: {x: 0, y: 0}
 --- !u!212 &1346161434
 SpriteRenderer:
   m_ObjectHideFlags: 0
