@@ -190,6 +190,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1033856104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1033856105}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1033856105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033856104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.89, y: -5, z: -1.6992188}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1202208154
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,9 +390,9 @@ MonoBehaviour:
   shipColorFront: {r: 0, g: 0, b: 0, a: 0}
   shipColorBase: {r: 0, g: 0, b: 0, a: 0}
   shipLocation: {fileID: 0}
-  shipSpeed: 5
-  shipSpeedMin: 3
-  shipSpeedMax: 7
+  shipSpeed: 0
+  shipSpeedMin: 5
+  shipSpeedMax: 9
   shipRotateSpeedLeft: 250
   shipRotateSpeedRight: 300
   timer: 0
@@ -378,6 +406,7 @@ MonoBehaviour:
   positiveSpawnY: 4
   finalSpawnX: 0
   finalSpawnY: 0
+  shipRelocator: {fileID: 1346161435}
   shipSpawnPos: {x: 0, y: 0}
 --- !u!212 &1346161434
 SpriteRenderer:
@@ -432,7 +461,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1346161432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.574, y: -0.05580074, z: 0}
+  m_LocalPosition: {x: -0.32, y: -0.23, z: 0}
   m_LocalScale: {x: 2.185, y: 1, z: 1}
   m_Children:
   - {fileID: 1612011461}
